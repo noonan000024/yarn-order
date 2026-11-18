@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Mali', sans-serif;
+    --font-sans: 'Mali', sans-serif;
+    --font-mono: 'Mali', sans-serif;
+  }
+
+  html,
+  body {
+    font-family: 'Mali', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, button, input, select, textarea, .font-display {
+    font-family: 'Mali', sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'Mali', sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Official Google Sign-In Material Button styling */
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #e7d4d7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #3b2d30;
+  cursor: pointer;
+  font-family: 'Mali', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  height: 38px;
+  letter-spacing: 0.1px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 14px;
+  position: relative;
+  text-align: center;
+  transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsi-material-button:hover:not(:disabled) {
+  background-color: #fdf2f4;
+  border-color: #dfb9c1;
+}
+
+.gsi-material-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.gsi-material-button-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.gsi-material-button-icon {
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsi-material-button-contents {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Subtle custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5ced2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d2b2b8;
+}

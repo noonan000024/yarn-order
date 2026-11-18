@@ -1,0 +1,8 @@
+{
+  "name": "Remix YarnBloom Studio",
+  "description": "ระบบรับออเดอร์และจัดการงานแฮนด์เมดถักดอกไม้ไหมพรม พร้อมสำรองข้อมูลและซิงค์ข้ามอุปกรณ์ผ่าน Google Sheets",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
